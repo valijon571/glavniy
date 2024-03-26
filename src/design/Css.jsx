@@ -2,6 +2,9 @@ import styled from "styled-components";
 export const Css = styled.div`
   & .container {
     padding: 0px 125px;
+    @media (max-width: 700px) {
+      padding: 0px 30px;
+    }
     & .first {
       display: flex;
       justify-content: space-between;
@@ -27,6 +30,9 @@ export const Css = styled.div`
             font-style: normal;
             font-weight: 100;
             line-height: 100%;
+            @media (max-width: 780px) {
+              display: none;
+            }
           }
         }
       }
@@ -40,6 +46,9 @@ export const Css = styled.div`
           font-weight: 500;
           line-height: 100%;
           margin-right: 15px;
+          @media (max-width: 780px) {
+            display: none;
+          }
         }
         & img {
           margin-right: 10px;
@@ -50,6 +59,9 @@ export const Css = styled.div`
       & hr {
         background: #235dff;
         height: 2px;
+        @media (max-width: 780px) {
+          display: none;
+        }
       }
     }
     & .third {
@@ -57,6 +69,9 @@ export const Css = styled.div`
       align-items: center;
       justify-content: space-between;
       margin-bottom: 10px;
+      @media (max-width: 780px) {
+        display: none;
+      }
       & .third_text {
         display: flex;
         align-items: center;
@@ -142,6 +157,12 @@ export const Css = styled.div`
           display: flex;
           justify-content: flex-start;
           margin-bottom: 20px;
+          @media (max-width: 1160px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+          }
           & img {
             margin-right: 9%;
           }
@@ -149,6 +170,11 @@ export const Css = styled.div`
         & .list_one {
           display: flex;
           justify-content: flex-end;
+          @media (max-width: 1160px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
           & img {
             margin-left: 9%;
           }
@@ -168,6 +194,37 @@ export const Css = styled.div`
       margin-left: 30%;
       padding: 10px 0px;
       border-radius: 16.02px;
+      @media (max-width: 1000px) {
+        margin-left: 25%;
+        @media (max-width: 960px) {
+          margin-left: 22%;
+          @media (max-width: 900px) {
+            margin-left: 20%;
+            @media (max-width: 800px) {
+              margin-left: 16%;
+              @media (max-width: 750px) {
+                margin-left: 12%;
+                @media (max-width: 680px) {
+                  margin-left: 10%;
+                  @media (max-width: 650px) {
+                    margin-left: 8%;
+                    @media (max-width: 630px) {
+                      margin-left: 5%;
+                      @media (max-width: 575px) {
+                        margin-left: 4%;
+                        width: 100%;
+                        @media (max-width: 570px) {
+                          margin-left: 0%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       & h5 {
         font-family: Urbanist;
         font-size: 32px;
@@ -182,6 +239,11 @@ export const Css = styled.div`
         justify-content: space-around;
         align-items: center;
         margin-bottom: 15px;
+        @media (max-width: 465px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
 
         & .select {
           & h6 {
@@ -205,6 +267,7 @@ export const Css = styled.div`
           & button {
             width: 222px;
             height: 57.11px;
+            text-align: left;
             padding: 10px;
             gap: 20px;
             border-radius: 16px;
@@ -247,6 +310,13 @@ export const Css = styled.div`
             gap: 0px;
             border-radius: 50px;
             border: 2px solid #afa9a9;
+            @media (max-width: 400px) {
+              font-size: 14px;
+            }
+          }
+          @media (max-width: 400px) {
+            gap: 0px;
+            margin-left: 5px;
           }
         }
       }
@@ -277,6 +347,9 @@ export const Css = styled.div`
           text-align: left;
           color: #9e9e9e;
           margin-bottom: 15px;
+          @media (max-width: 400px) {
+            margin-left: 5px;
+          }
         }
       }
 

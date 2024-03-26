@@ -1,5 +1,13 @@
 import React from "react";
 import { Css } from "../design/Css";
+import { LuPlaneTakeoff } from "react-icons/lu";
+import { LuUsers } from "react-icons/lu";
+import { FaChild } from "react-icons/fa";
+import { LuCalendarDays } from "react-icons/lu";
+import { GiCarSeat } from "react-icons/gi";
+import { RiHotelLine } from "react-icons/ri";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { LuWallet } from "react-icons/lu";
 
 const Application = () => {
   return (
@@ -11,8 +19,13 @@ const Application = () => {
             <div className="select_div">
               <div className="select">
                 <h6>Откуда</h6>
+
                 <select name="" id="">
-                  <option value="volvo">Ташкент</option>
+                  <LuPlaneTakeoff />
+                  <option value="volvo">
+                    <LuPlaneTakeoff />
+                    Ташкент
+                  </option>
                 </select>
               </div>
               <div className="select">
@@ -25,22 +38,33 @@ const Application = () => {
             <div className="select_div">
               <div className="select">
                 <h6>Взрослых</h6>
-                <button>3</button>
+                <button>
+                  <LuUsers />3
+                </button>
               </div>
               <div className="select">
                 <h6>Детей</h6>
-                <button>0</button>
+                <button>
+                  <FaChild />0
+                </button>
               </div>
             </div>
             <div className="select_div">
               <div className="select">
                 <h6>Дата вылета и кол-во дней</h6>
-                <button>29.01.2024 2-7 дн.</button>
+                <button>
+                  <LuCalendarDays />
+                  29.01.2024 2-7 дн.
+                </button>
               </div>
               <div className="select">
                 <h6>Класс самолета</h6>
                 <select name="" id="">
-                  <option value="volvo">выберите</option>
+                  <option value="volvo">
+                    {" "}
+                    <GiCarSeat />
+                    выберите
+                  </option>
                 </select>
               </div>
             </div>
@@ -48,12 +72,16 @@ const Application = () => {
               <div className="select">
                 <h6>Рейтинг отелей</h6>
                 <select name="" id="">
-                  <option value="volvo">выберите</option>
+                  <option value="volvo">
+                    <RiHotelLine />
+                    выберите
+                  </option>
                 </select>
               </div>
               <div className="select">
                 <h6>Тип питания</h6>
                 <select name="" id="">
+                  <IoFastFoodOutline />
                   <option value="volvo">выберите питание</option>
                 </select>
               </div>
@@ -61,7 +89,10 @@ const Application = () => {
             <div className="write">
               <h6>Напишите ваш бюджет</h6>
               <div className="write_step">
-                <div>до 15 000 000 сум </div>
+                <div>
+                  <LuWallet />
+                  до 15 000 000 сум{" "}
+                </div>
                 <button>Жду преложений</button>
               </div>
             </div>

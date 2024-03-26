@@ -14,10 +14,18 @@ export const Header_homeStyle = styled.div`
       #182e63 93.82%,
       #1e2344 109.5%
     );
+    @media (max-width: 950px) {
+      height: 100%;
+    }
 
     & .header_home_find {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 890px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       & h1 {
         color: #ffffff;
         font-family: Urbanist;
@@ -27,6 +35,14 @@ export const Header_homeStyle = styled.div`
         line-height: 100%;
         margin-left: 125px;
         margin-top: 100px;
+        @media (max-width: 700px) {
+          font-size: 50px;
+          margin-left: 10%;
+          @media (max-width: 300px) {
+            font-size: 30px;
+            margin-left: 5%;
+          }
+        }
       }
       & img {
         width: 50%;
@@ -45,12 +61,25 @@ export const Header_homeStyle = styled.div`
       & .cards_card {
         display: flex;
         justify-content: center;
+        @media (max-width: 1000px) {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
         & .card {
           background: #ffffff;
           border-radius: 20px;
           width: 20%;
           margin-right: 20px;
           padding: 23px;
+          @media (max-width: 1000px) {
+            width: 245px;
+            margin-bottom: 25px;
+            @media (max-width: 390px) {
+              width: 80%;
+              margin-right: 0px;
+            }
+          }
           & img {
             width: 150px;
             height: 150px;
