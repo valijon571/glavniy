@@ -24,7 +24,6 @@ export const Header_homeStyle = styled.div`
       @media (max-width: 890px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
       }
       & h1 {
         color: #ffffff;
@@ -38,14 +37,23 @@ export const Header_homeStyle = styled.div`
         @media (max-width: 700px) {
           font-size: 50px;
           margin-left: 10%;
-          @media (max-width: 300px) {
-            font-size: 30px;
-            margin-left: 5%;
+          @media (max-width: 500px) {
+            font-size: 40px;
+            margin-top: 70px;
+
+            @media (max-width: 300px) {
+              font-size: 30px;
+              margin-left: 5%;
+              margin-top: 50px;
+            }
           }
         }
       }
       & img {
         width: 50%;
+        @media (max-width: 890px) {
+          width: 100%;
+        }
       }
     }
     & .cards {
@@ -56,30 +64,32 @@ export const Header_homeStyle = styled.div`
         font-size: 45px;
         font-style: normal;
         font-weight: 600;
-        /* margin: 15px 0px 0px; */
+        @media (max-width: 500px) {
+          display: none;
+        }
       }
       & .cards_card {
         display: flex;
         justify-content: center;
-        @media (max-width: 1000px) {
+        gap: 26px;
+
+        @media (max-width: 1100px) {
           display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
+          overflow-y: auto;
+          gap: 0px;
+          margin-left: 15px;
+          justify-content: flex-start;
         }
         & .card {
           background: #ffffff;
           border-radius: 20px;
-          width: 20%;
+          width: 300px;
           margin-right: 20px;
           padding: 23px;
-          @media (max-width: 1000px) {
-            width: 245px;
-            margin-bottom: 25px;
-            @media (max-width: 390px) {
-              width: 80%;
-              margin-right: 0px;
-            }
+          @media (max-width: 500px) {
+            width: 210px;
           }
+
           & img {
             width: 150px;
             height: 150px;
@@ -91,6 +101,10 @@ export const Header_homeStyle = styled.div`
             font-weight: 700;
             line-height: 26px;
             margin: 15px 0px;
+            width: 300px;
+            @media (max-width: 500px) {
+              width: 210px;
+            }
           }
           & .card_nae {
             color: #1e2344;
