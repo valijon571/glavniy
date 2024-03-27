@@ -37,6 +37,8 @@ export const Header_homeStyle = styled.div`
         @media (max-width: 700px) {
           font-size: 50px;
           margin-left: 10%;
+          text-align: center;
+
           @media (max-width: 500px) {
             font-size: 40px;
             margin-top: 70px;
@@ -64,7 +66,7 @@ export const Header_homeStyle = styled.div`
         font-size: 45px;
         font-style: normal;
         font-weight: 600;
-        @media (max-width: 500px) {
+        @media (max-width: 530px) {
           display: none;
         }
       }
@@ -86,13 +88,24 @@ export const Header_homeStyle = styled.div`
           width: 300px;
           margin-right: 20px;
           padding: 23px;
-          @media (max-width: 500px) {
+          @media (max-width: 750px) {
             width: 210px;
+            @media (max-width: 530px) {
+              width: 160px;
+            }
           }
 
           & img {
             width: 150px;
             height: 150px;
+            @media (max-width: 750px) {
+              width: 120px;
+              height: 120px;
+              @media (max-width: 530px) {
+                width: 95px;
+                height: 95px;
+              }
+            }
           }
           & h5 {
             color: #1e2344;
@@ -102,8 +115,11 @@ export const Header_homeStyle = styled.div`
             line-height: 26px;
             margin: 15px 0px;
             width: 300px;
-            @media (max-width: 500px) {
-              width: 210px;
+            @media (max-width: 750px) {
+              font-size: 15px;
+              @media (max-width: 530px) {
+                font-size: 12px;
+              }
             }
           }
           & .card_nae {
@@ -113,6 +129,12 @@ export const Header_homeStyle = styled.div`
             font-weight: 400;
             line-height: 22px;
             margin: 11px 0px 0px;
+            @media (max-width: 750px) {
+              font-size: 13px;
+              @media (max-width: 530px) {
+                font-size: 10px;
+              }
+            }
           }
         }
       }
