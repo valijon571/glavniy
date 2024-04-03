@@ -2,132 +2,78 @@
 @-ms-viewport {
   width: device-width;
 }
-@font-face {
+/* @font-face {
   src: url("/fonds/Urbanist-Black.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 900;
 }
 @font-face {
   src: url("/fonds/Urbanist-BlackItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 900;
 }
 @font-face {
   src: url("/fonds/Urbanist-Bold.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
 }
 @font-face {
   src: url("/fonds/Urbanist-BoldItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 700;
 }
 @font-face {
   src: url("/fonds/Urbanist-ExtraBold.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 800;
 }
 @font-face {
   src: url("/fonds/Urbanist-ExtraBoldItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 800;
 }
 @font-face {
   src: url("/fonds/Urbanist-ExtraLight.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 200;
 }
 @font-face {
   src: url("/fonds/Urbanist-ExtraLightItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 200;
 }
 @font-face {
   src: url("/fonds/Urbanist-Italic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 400;
 }
 @font-face {
   src: url("/fonds/Urbanist-Light.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 300;
 }
 @font-face {
   src: url("/fonds/Urbanist-LightItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 300;
 }
 @font-face {
   src: url("/fonds/Urbanist-Medium.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500;
 }
 @font-face {
   src: url("/fonds/Urbanist-MediumItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 500;
-}
+} */
 @font-face {
-  src: url("/fonds/Urbanist-Regular.ttf");
+  src: url(fonds/Urbanist-Regular.ttf);
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
 }
-@font-face {
+/* @font-face {
   src: url("/fonds/Urbanist-SemiBold.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 600;
 }
 @font-face {
   src: url("/fonds/Urbanist-SemiBoldItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 600;
 }
 @font-face {
   src: url("/fonds/Urbanist-Thin.ttf");
   font-family: "Urbanist";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100;
 }
 @font-face {
   src: url("/fonds/Urbanist-ThinItalic.ttf");
   font-family: "Urbanist";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 100;
-}
+} */
 
 * {
   font-family: "Urbanist";

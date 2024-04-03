@@ -52,6 +52,7 @@ export const Css = styled.div`
         }
         & img {
           margin-right: 10px;
+          width: 20px;
         }
       }
     }

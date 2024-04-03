@@ -1,7 +1,14 @@
-import React from "react";
 import { Css } from "../design/Css";
-
+import Form from "react-bootstrap/Form";
+import React, { useState } from "react";
+import { Dropdown } from "react-bootstrap";
+const tillar = [
+  { name: "English", flag: "/image/usa.png" },
+  { name: "Russian", flag: "/image/russia.png" },
+  { name: "Uzbek", flag: "/image/uzbekistan.png" },
+];
 const Header = () => {
+  const [tanlangan, setTanlangan] = useState("English");
   return (
     <>
       <Css>
@@ -16,8 +23,39 @@ const Header = () => {
             <div className="first_lead">
               <p className="first_lead_text">Контакты</p>
               <p className="first_lead_text">О компании</p>
-              <img src="/image/twemoji_flag-for-flag-germany.png" alt="" />
-              <h3>Uz</h3>
+
+              <h3>
+                <div>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                      <img
+                        src={
+                          tillar.find((item) => item.name === tanlangan).flag
+                        }
+                        alt="Flag"
+                        className="flag-icon"
+                      />
+                      {tanlangan}
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      {tillar.map((til) => (
+                        <Dropdown.Item
+                          key={til.name}
+                          onClick={() => setTanlangan(til.name)}
+                        >
+                          <img
+                            src={til.flag}
+                            alt="Flag"
+                            className="flag-icon"
+                          />
+                          <span>{til.name}</span>
+                        </Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </div>
+              </h3>
             </div>
           </div>
           <div className="second">
